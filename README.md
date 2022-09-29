@@ -1,0 +1,1 @@
+# qa-rec-task.dotnet.selenium
