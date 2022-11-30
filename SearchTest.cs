@@ -25,10 +25,9 @@ public class Tests
 
     [Test]
     public void SearchSuccess()
-    {
+    { 
         _webDriver.Navigate().GoToUrl("https://www.bbc.co.uk/");
-
-        _webDriver.FindElement(By.CssSelector("[href='/search']")).Click();
+        _webDriver.FindElement(By.CssSelector("[href=\"/search?d=HOMEPAGE_PS\"]")).Click();
         _webDriver.FindElement(By.Id("search-input")).SendKeys("Sp");
         _webDriver.FindElement(By.CssSelector("[type='submit']")).Click();
 
